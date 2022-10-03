@@ -44,7 +44,7 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+d exec rofi -show drun
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+q kill
 
 # change focus
 bindsym $mod+h focus left
