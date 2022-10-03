@@ -126,8 +126,8 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'do you want to quit i3 (◕‿◕ ✿) ?' -B 'YEAH FUCK THIS SHIT' 'i3-msg exit'"
-bindsym $mod+p exec "i3-nagbar -t warning -m 'Shutdown or Reboot?' -B '⏻' 'poweroff' -B '↺' 'reboot'"
+# bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'do you want to quit i3 (◕‿◕ ✿) ?' -B 'YEAH FUCK THIS SHIT' 'i3-msg exit'"
+bindsym $mod+p exec "i3-nagbar -t warning -m 'Shutdown or Reboot?' -B 'ShutDown' 'poweroff' -B 'Reboot' 'reboot'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
