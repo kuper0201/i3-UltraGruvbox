@@ -27,10 +27,10 @@ if [[ $(ls ~/.config/ | grep "rofi") ]]; then
 fi
 cp -r src/rofi/ ~/.config/
 
-if [[ $(ls ~/.config/ | grep "fish") ]]; then
-  mv ~/.config/fish/ ~/.config/OldConfig
-fi
-cp -r src/fish/ ~/.config/
+#if [[ $(ls ~/.config/ | grep "fish") ]]; then
+#  mv ~/.config/fish/ ~/.config/OldConfig
+#fi
+#cp -r src/fish/ ~/.config/
 
 if [[ $(ls ~/.config/ | grep "polybar") ]]; then
   mv ~/.config/polybar/ ~/.config/OldConfig
