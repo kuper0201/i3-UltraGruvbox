@@ -22,8 +22,6 @@ gaps outer 10
 bindsym $mod+z		gaps outer current plus  5 
 bindsym $mod+Shift+z	gaps outer current minus 5
 
-# sets the wallpaper
-exec --no-startup-id feh --bg-fill ~/.config/i3/wallpapers/gruv-material.png
 # starts the compositor
 exec --no-startup-id picom --config ~/.config/picom/picom.conf 
 # Use pactl to adjust volume in PulseAudio.
@@ -98,16 +96,16 @@ set $ws9 "9"
 set $ws10 "10"
 
 # switch to workspace
-bindsym $mod+1 workspace number $ws1; exec "feh --bg-scale ./wallpaper/wp01.jpg"
-bindsym $mod+2 workspace number $ws2; exec "feh --bg-scale ./wallpaper/wp02.jpg"
-bindsym $mod+3 workspace number $ws3; exec "feh --bg-scale ./wallpaper/wp03.jpg"
-bindsym $mod+4 workspace number $ws4; exec "feh --bg-scale ./wallpaper/wp04.jpg"
-bindsym $mod+5 workspace number $ws5; exec "feh --bg-scale ./wallpaper/wp05.jpg"
-bindsym $mod+6 workspace number $ws6; exec "feh --bg-scale ./wallpaper/wp06.jpg"
-bindsym $mod+7 workspace number $ws7; exec "feh --bg-scale ./wallpaper/wp07.jpg"
-bindsym $mod+8 workspace number $ws8; exec "feh --bg-scale ./wallpaper/wp08.jpg"
-bindsym $mod+9 workspace number $ws9; exec "feh --bg-scale ./wallpaper/wp09.jpg"
-bindsym $mod+0 workspace number $ws10; exec "feh --bg-scale ./wallpaper/wp10.jpg"
+bindsym $mod+1 workspace number $ws1; exec --no-startup-id feh --bg-scale ~/.config/i3/wallpaper/wp01.jpg
+bindsym $mod+2 workspace number $ws2; exec --no-startup-id feh --bg-scale ~/.config/i3/wallpaper/wp02.jpg
+bindsym $mod+3 workspace number $ws3; exec --no-startup-id feh --bg-scale ~/.config/i3/wallpaper/wp03.jpg
+bindsym $mod+4 workspace number $ws4; exec --no-startup-id feh --bg-scale ~/.config/i3/wallpaper/wp04.jpg
+bindsym $mod+5 workspace number $ws5; exec --no-startup-id feh --bg-scale ~/.config/i3/wallpaper/wp05.jpg
+bindsym $mod+6 workspace number $ws6; exec --no-startup-id feh --bg-scale ~/.config/i3/wallpaper/wp06.jpg
+bindsym $mod+7 workspace number $ws7; exec --no-startup-id feh --bg-scale ~/.config/i3/wallpaper/wp07.jpg
+bindsym $mod+8 workspace number $ws8; exec --no-startup-id feh --bg-scale ~/.config/i3/wallpaper/wp08.jpg
+bindsym $mod+9 workspace number $ws9; exec --no-startup-id feh --bg-scale ~/.config/i3/wallpaper/wp09.jpg
+bindsym $mod+0 workspace number $ws10; exec --no-startup-id feh --bg-scale ~/.config/i3/wallpaper/wp10.jpg
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
