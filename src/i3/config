@@ -22,6 +22,8 @@ gaps outer 10
 bindsym $mod+z		gaps outer current plus  5 
 bindsym $mod+Shift+z	gaps outer current minus 5
 
+#Set Wallpaper
+exec --no-startup-id feh --bg-scale ~/.config/i3/wallpaper/wp01.jpg
 # starts the compositor
 exec --no-startup-id picom --config ~/.config/picom/picom.conf 
 # Use pactl to adjust volume in PulseAudio.
